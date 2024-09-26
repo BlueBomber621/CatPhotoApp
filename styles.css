@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+main {
+  background-color: #222;
+  padding-bottom: 5px;
+}
+
+/* Title  */
+div.introduction {
+  padding: 20px;
+  background-color: #444;
+  text-align: center;
+}
+h1 {
+  color: burlywood;
+  display: inline-block;
+  border-inline: 4px solid burlywood;
+  padding: 0 20px;
+  border-inline-width: 20px;
+}
+
+/* Photos */
+section.photos {
+  margin: 10px;
+  padding: 15px;
+  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.photos h2 {
+  color: white;
+  text-align: center;
+}
+
+.photos p {
+  text-align: center;
+  color: white;
+}
+
+.photos a {
+  color: white;
+}
+.photos a:hover {
+  color: purple;
+}
+
+.photos img {
+  margin: 5px 0;
+  padding: 2px;
+  width: 530px;
+  max-height: 530px;
+}
+
+.photos img:hover {
+  padding: 0px;
+  border: 2px solid purple;
+}
+
+/* Lists */
+.lists {
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 15px;
+  display: flex;
+  height: 100%;
+  max-height: 800px;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  order: 0;
+}
+
+.lists h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 42%;
+  margin-right: 58%;
+  white-space: nowrap;
+  order: -1;
+}
+
+.lists h3 {
+  display: block;
+  white-space: nowrap;
+}
+
+/* Forum */
+
+section.form {
+  margin: 10px;
+  padding: 10px;
+  background-color: burlywood;
+  text-align: center;
+}
+
+.form h2 {
+  padding: 0 26%;
+  white-space: nowrap;
+  display: inline-block;
+  border-bottom: 2px dashed #222;
+  border-top: 2px dashed #222;
+}
+.form fieldset {
+  border: 2px #222;
+  border-style: outset;
+  margin: 5px 0;
+}
+.form legend {
+  border: 1px solid #777;
+}
+.form input {
+  padding: 2px;
+  border-radius: 6px;
+}
+.form button {
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  padding: 15px;
+  background-color: #aaa;
+  text-align: center;
+}
+
+/* Screen Changes */
+
+@media screen and (min-width: 800px) {
+  div.introduction {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+  section.photos {
+    margin-top: 77px;
+  }
+
+  main {
+    padding-top: 10px;
+  }
+}
